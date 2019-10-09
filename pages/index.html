@@ -1,0 +1,35 @@
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Welcome to Clover!</h1>
+            <p1>PG's newest Resource on the web.</p1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About</h2>
+                    <p>About this site.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Contact</h2>
+                    <p>For questions, concerns or comments contact Ryan Schulte.</p>
+                    <p>
+                        <a class="btn btn-default">
+                            href="{% url 'page' 'contact' %}" role="button">Contact</a>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="container">
+            <p>&copy; {% now 'Y' %}</p>
+        </div>
+    </footer>
+

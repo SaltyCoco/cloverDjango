@@ -1,0 +1,122 @@
+<style>
+    #t01 {
+        font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+        border-collapse: collapse;width: 100%;
+    }
+
+    #t01 td, #t01 th {
+        border: 1px solid #184f16;
+        padding: 8px;
+    }
+
+    #t01 tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #t01 tr:hover {
+        background-color: #ddd;
+    }
+
+    #t01 th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    #t02 {
+        font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+        border-collapse: collapse;width: 100%;
+    }
+
+    #t02 td, #t02 th {
+        border: 1px solid #091df4;
+        padding: 8px;
+    }
+
+    #t02 tr:nth-child(even) {
+        background-color: #4ee5e8;
+    }
+
+    #t02 tr:hover {
+        background-color: #ddd;
+    }
+
+    #t02 th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #0b115b;
+        color: white;
+    }
+
+</style>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Current Loans Status</h2>
+        </div>
+    </div>
+
+        <table id=t01>
+            <tr>
+                <th>Current Approved Loans</th>
+                <th>Count</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Former</td>
+                <td>" + str(cntFormer) + "</td>
+                <td>" + "$" + revFormerTotal + "</td>
+            </tr>
+            <tr>
+                <td>New (DM)</td>
+                <td>" + str(cnt_new_dm_Total) + "</td>
+                <td>" + "$" + revNew_dm_Total + "</td>
+            </tr>
+            <tr>
+                <td>New Digital Channel</td>
+                <td>" + str(cntNewTotal) + "</td>
+                <td>" + "$" + revNewTotal + "</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <table id='t02'>
+            <tr>
+                <th>Pening Loans Bucket</th>
+                <th>Count</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Customer Verification</td>
+                <td>" + str(cntCV) + "</td>
+                <td>" + "$" + rev_amtCV + "</td>
+            </tr>
+            <tr>
+                <td>Clarity Review</td>
+                <td>" + str(cntCR) + "</td>
+                <td>" + "$" + rev_amtCR + "</td>
+            </tr>
+            <tr>
+                <td>Cool Down</td>
+                <td>" + str(cntCD) + "</td>
+                <td>" + "$" + rev_amtCD + "</td>
+            </tr>
+            <tr>
+                <td>Cool Down Review</td>
+                <td>" + str(cntCDR) +"</td>
+                <td>" + "$" + rev_amtCDR +"</td>
+            </tr>
+            <tr>
+                <td>Pending Review</td>
+                <td>" + str(cntPR) +"</td>
+                <td>" + "$" + rev_amtPR +"</td>
+            </tr></table>
+
+</div>
